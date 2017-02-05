@@ -2,3 +2,12 @@ This is a library to connect a display from an old DVD I found in a trash can to
 
 NOTE that the display grids an segments arrangement is valid for the particular display I have, you'll have to experiment
 with yours to find the correct setup.
+
+The communication with the controller chip (PT6312) is done using the GPIO lines of Raspberry PI, using the bcm2835 library.
+The GPIO lines to use are configured in pt6312.c file, by modifying this lines (if needed):
+
+/* GPIO pins */
+#define RO_PIN  RPI_GPIO_P1_15
+#define CLK_PIN RPI_GPIO_P1_19
+#define STB_PIN RPI_GPIO_P1_21
+#define DIO_PIN RPI_GPIO_P1_23
