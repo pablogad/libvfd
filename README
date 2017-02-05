@@ -1,1 +1,4 @@
 This is a library to connect a display from an old DVD I found in a trash can to a Raspberry PI.
+
+NOTE that the display grids an segments arrangement is valid for the particular display I have, you'll have to experiment
+with yours to find the correct setup.
