@@ -10,3 +10,5 @@ The GPIO lines to use are configured in pt6312.c file, by modifying these lines 
 #define CLK_PIN RPI_GPIO_P1_19
 #define STB_PIN RPI_GPIO_P1_21
 #define DIO_PIN RPI_GPIO_P1_23
+
+The PT6312 chip works with 5v logic, so you'll need an interface to adapt the 3v3 levels of the Raspberry pi to those.
